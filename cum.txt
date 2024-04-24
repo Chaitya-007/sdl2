@@ -1,0 +1,32 @@
+ASS 1 => XAMPP
+cd Downloads
+sudo chmod +x xampp-linux-x64-8.2.0-0-installer.run
+sudo ./xampp-linux-x64-8.2.0-0-installer.run
+
+sudo service apache2 status
+sudo service apache2 stop
+start apache
+
+sudo su
+chmod -R 777 /opt/lampp/htdocs
+
+
+ASS 8 => ruby
+*************************************************
+sudo apt update
+sudo apt install ruby-full
+sudo su
+gem install Sinatra
+
+OR
+
+sudo apt-get install ruby-full
+sudo apt-get update -y
+sudo apt-get install -y ruby-sinatra
+
+FOR RUNNING
+ruby app.rb
+
+ASS 9 => EMAIL
+gem install mail
+ruby main.rb
